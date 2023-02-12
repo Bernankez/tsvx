@@ -1,19 +1,16 @@
 {
-  "name": "@ts-template/tsup",
+  "name": "@tsvx/vue-loader",
   "type": "module",
   "version": "0.0.0",
   "description": "",
-  "author": {
-    "name": "Cole",
-    "email": "bernankez@qq.com"
-  },
+  "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/bernankez/TSTemplateMonorepo#readme",
+  "homepage": "https://github.com/bernankez/tsvx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bernankez/TSTemplateMonorepo.git"
+    "url": "git+https://github.com/bernankez/tsvx.git"
   },
-  "bugs": "https://github.com/bernankez/TSTemplateMonorepo/issues",
+  "bugs": "https://github.com/bernankez/tsvx/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -38,10 +35,18 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch src/index.ts"
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "start": "tsx src/index.ts"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@esbuild-kit/core-utils": "^3.1.0",
+    "@esbuild-kit/esm-loader": "^2.5.5",
+    "@vue/compiler-sfc": "^3.2.47",
+    "esbuild": "^0.17.7",
+    "uncrypto": "^0.1.2"
   }
 }

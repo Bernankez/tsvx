@@ -1,5 +1,5 @@
 {
-  "name": "@ts-template/monorepo",
+  "name": "@tsvx/monorepo",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bernankez/TSTemplateMonorepo.git"
+    "url": "git+https://github.com/Bernankez/tsvx.git"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -43,7 +43,8 @@
     "unbuild": "^1.1.1",
     "vite": "^4.1.1",
     "vite-plugin-dts": "^1.7.2",
-    "vitest": "^0.28.4"
+    "vitest": "^0.28.4",
+    "vue": "^3.2.47"
   },
   "lint-staged": {
     "*": [

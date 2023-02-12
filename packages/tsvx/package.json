@@ -1,19 +1,16 @@
 {
-  "name": "@ts-template/vite",
+  "name": "tsvx",
   "type": "module",
   "version": "0.0.0",
   "description": "",
-  "author": {
-    "name": "Cole",
-    "email": "bernankez@qq.com"
-  },
+  "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/bernankez/TSTemplateMonorepo#readme",
+  "homepage": "https://github.com/bernankez/tsvx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bernankez/TSTemplateMonorepo.git"
+    "url": "git+https://github.com/bernankez/tsvx.git"
   },
-  "bugs": "https://github.com/bernankez/TSTemplateMonorepo/issues",
+  "bugs": "https://github.com/bernankez/tsvx/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -38,8 +35,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && vite build",
-    "dev": "tsx watch src/index.ts"
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "start": "tsx src/index.ts"
   },
   "publishConfig": {
     "access": "public"
