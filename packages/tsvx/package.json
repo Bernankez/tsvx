@@ -66,9 +66,7 @@
   "dependencies": {
     "@esbuild-kit/cjs-loader": "^2.4.2",
     "@esbuild-kit/core-utils": "^3.1.0",
-    "@tsvx/vue-loader": "workspace:*"
-  },
-  "optionalDependencies": {
+    "@tsvx/vue-loader": "workspace:*",
     "fsevents": "~2.3.2"
   },
   "devDependencies": {
