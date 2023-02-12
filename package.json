@@ -46,6 +46,11 @@
     "vitest": "^0.28.4",
     "vue": "^3.2.47"
   },
+  "pnpm": {
+    "patchedDependencies": {
+      "unbuild@1.1.1": "patches/unbuild@1.1.1.patch"
+    }
+  },
   "lint-staged": {
     "*": [
       "eslint --fix"

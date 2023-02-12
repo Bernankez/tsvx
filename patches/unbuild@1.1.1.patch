@@ -1,0 +1,15 @@
+diff --git a/dist/shared/unbuild.0dedbedb.mjs b/dist/shared/unbuild.0dedbedb.mjs
+index 1f6e2d7534bfe1cbae76b559e71f5931962b28ab..0807112da0af1e8b4edeef87e9665d7201f6b6cc 100644
+--- a/dist/shared/unbuild.0dedbedb.mjs
++++ b/dist/shared/unbuild.0dedbedb.mjs
+@@ -112,8 +112,8 @@ function inferEntries(pkg, sourceFiles) {
+       if (source) {
+         return source;
+       }
+-      const SOURCE_RE = new RegExp(`${d}${isDir ? "" : "\\.\\w+"}$`);
+-      return sourceFiles.find((i) => i.match(SOURCE_RE))?.replace(/(\.d\.ts|\.\w+)$/, "");
++      const SOURCE_RE = new RegExp(`/(${d}${isDir ? "" : "\\.\\w+"})$`);
++      return sourceFiles.find((i) => i.match(SOURCE_RE)?.[1])?.replace(/(\.d\.ts|\.\w+)$/, "");
+     }, void 0);
+     if (!input) {
+       warnings.push(`Could not find entrypoint for ${output.file}`);
