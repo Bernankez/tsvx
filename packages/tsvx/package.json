@@ -56,6 +56,7 @@
     "dist"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "unbuild",
     "dev": "unbuild --stub",
     "start": "tsx src/index.ts"
