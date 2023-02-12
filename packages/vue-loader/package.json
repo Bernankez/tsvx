@@ -1,7 +1,7 @@
 {
   "name": "@tsvx/vue-loader",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
