@@ -3,9 +3,26 @@ import { fileURLToPath } from "node:url";
 import { transformSync } from "esbuild";
 import { compileScript, parse } from "@vue/compiler-sfc";
 import { randomUUID } from "uncrypto";
-import type { GetFormat, TransformSource } from "@esbuild-kit/esm-loader";
 import { getFormat as esmGetFormat, transformSource as esmTransformSource } from "@esbuild-kit/esm-loader";
 import { compareNodeVersion } from "@esbuild-kit/core-utils";
+import type { MaybePromise, ModuleFormat } from "./utils";
+
+export type GetFormat = (
+  url: string,
+  context: Record<string, unknown>,
+  defaultGetFormat: GetFormat
+) => MaybePromise<{ format: ModuleFormat }>;
+
+type Source = string | SharedArrayBuffer | Uint8Array;
+
+export type TransformSource = (
+  source: Source,
+  context: {
+    url: string;
+    format: ModuleFormat;
+  },
+  defaultTransformSource: TransformSource
+) => MaybePromise<{ source: Source }>;
 
 const _getFormat: GetFormat = async (url, context, defaultGetFormat) => {
   if (url.endsWith(".vue")) {
