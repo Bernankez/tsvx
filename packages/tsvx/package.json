@@ -1,7 +1,7 @@
 {
   "name": "tsvx",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript & Vue Execute (tsvx)",
   "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
