@@ -21,7 +21,7 @@
     "prepublishOnly": "tsx ./scripts/copy.ts",
     "clean": "rimraf packages/*/{dist,es,lib}",
     "build": "pnpm clean && pnpm -r -F \"./packages/*\" build",
-    "release": "bumpp package.json packages/**/package.json",
+    "release": "bumpp package.json packages/*/package.json",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
