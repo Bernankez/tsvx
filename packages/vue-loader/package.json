@@ -2,10 +2,10 @@
   "name": "@tsvx/vue-loader",
   "type": "module",
   "version": "0.0.1",
-  "description": "",
+  "description": "Loaders for tsvx",
   "author": "Cole <bernankez@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/bernankez/tsvx#readme",
+  "homepage": "https://github.com/Bernankez/tsvx/tree/master/packages/vue-loader#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bernankez/tsvx.git"

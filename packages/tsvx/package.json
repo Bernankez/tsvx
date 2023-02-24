@@ -11,7 +11,11 @@
     "url": "git+https://github.com/bernankez/tsvx.git"
   },
   "bugs": "https://github.com/bernankez/tsvx/issues",
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "vue",
+    "runtime"
+  ],
   "sideEffects": true,
   "exports": {
     ".": {

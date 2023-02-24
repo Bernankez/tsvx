@@ -4,16 +4,18 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.12.0",
-  "description": "",
+  "description": "TypeScript & Vue Execute (tsvx)",
   "author": {
     "name": "Cole",
     "email": "bernankez@qq.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/bernankez/tsvx#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bernankez/tsvx.git"
   },
+  "bugs": "https://github.com/bernankez/tsvx/issues",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "tsx ./scripts/copy.ts",
