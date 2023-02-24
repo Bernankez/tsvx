@@ -16,6 +16,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "tsx ./scripts/copy.ts",
     "clean": "rimraf packages/*/{dist,es,lib}",
     "build": "pnpm clean && pnpm -r -F \"./packages/*\" build",
     "release": "bumpp package.json packages/**/package.json",
@@ -29,10 +30,12 @@
   },
   "devDependencies": {
     "@bernankez/eslint-config": "^0.2.2",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.11.18",
     "bumpp": "^8.2.1",
     "changelogithub": "^0.12.7",
     "eslint": "^8.33.0",
+    "fs-extra": "^11.1.0",
     "happy-dom": "^8.2.6",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
