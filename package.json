@@ -18,7 +18,6 @@
   "bugs": "https://github.com/bernankez/tsvx/issues",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepublishOnly": "tsx ./scripts/copy.ts",
     "clean": "rimraf packages/*/{dist,es,lib}",
     "build": "pnpm clean && pnpm -r -F \"./packages/*\" build",
     "release": "bumpp package.json packages/*/package.json",

@@ -60,7 +60,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build && tsx ../../scripts/copy.ts",
     "build": "unbuild",
     "dev": "unbuild --stub",
     "start": "tsx src/index.ts"
